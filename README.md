@@ -99,9 +99,13 @@ Based on the completed experiments, LSTM achieved the highest confirmed test acc
                     │ Emotion +       │
                     │ Confidence      │
                     └─────────────────┘
+```
+
 ---
 
 ## 📁 Project Structure
+
+```text
 Emotion-Classification/
 │
 ├── Artifacts/
@@ -115,12 +119,15 @@ Emotion-Classification/
 ├── requirements.txt
 ├── runtime.txt
 └── README.md
+```
+
 ---
 
 ## 🧠 NLP Preprocessing
 
 The project uses the following preprocessing pipeline:
 
+```text
 Raw Text
     ↓
 Tokenization
@@ -134,70 +141,98 @@ Fixed Length Sequence
 Embedding Layer
     ↓
 Deep Learning Model
+```
+
 ---
 
-## Configuration
-Maximum vocabulary: 10,000 words
-Maximum sequence length: 50 tokens
-Padding: Post
-Truncation: Post
-OOV token: <unk>
+## ⚙️ Configuration
+
+* Maximum vocabulary: 10,000 words
+* Maximum sequence length: 50 tokens
+* Padding: Post
+* Truncation: Post
+* OOV token: `<unk>`
+
 ---
 
 ## 🎯 Emotion Classes
+
 The model predicts one of the following six emotions:
 
-0 → Sadness
-1 → Joy
-2 → Love
-3 → Anger
-4 → Fear
-5 → Surprise
+| Label | Emotion |
+| :---: | :--- |
+| 0 | Sadness |
+| 1 | Joy |
+| 2 | Love |
+| 3 | Anger |
+| 4 | Fear |
+| 5 | Surprise |
+
 ---
 
 ## 📈 Key Learnings
-Text preprocessing for Deep Learning
-Tokenization and sequence generation
-Padding and truncation
-Word embeddings
-Recurrent Neural Networks
-LSTM architecture
-GRU architecture
-Bidirectional GRU
-Model evaluation and comparison
-Model serialization
-FastAPI model deployment
-REST API development
+
+* Text preprocessing for Deep Learning
+* Tokenization and sequence generation
+* Padding and truncation
+* Word embeddings
+* Recurrent Neural Networks
+* LSTM architecture
+* GRU architecture
+* Bidirectional GRU
+* Model evaluation and comparison
+* Model serialization
+* FastAPI model deployment
+* REST API development
+
 ---
 
 ## ⚙️ Application Setup
-Prerequisites
+
+### Prerequisites
 
 Make sure the following are installed:
 
-Python 3.14.7
-Git
-VS Code or any Python IDE
-FastAPI
-Uvicorn
-TensorFlow
+* Python 3.14.7
+* Git
+* VS Code or any Python IDE
+* FastAPI
+* Uvicorn
+* TensorFlow
+
 ---
 
 ## 🚀 Installation & Running Locally
-Create Virtual Environment
+
+**1. Create Virtual Environment**
+```bash
 python -m venv venv
-Activate Virtual Environment
+```
+
+**2. Activate Virtual Environment**
+```bash
 venv\Scripts\activate
-Install Dependencies
+```
+
+**3. Install Dependencies**
+```bash
 pip install -r requirements.txt
-Start FastAPI
+```
+
+**4. Start FastAPI**
+```bash
 uvicorn main:app --reload
-Open the Application
-API: http://127.0.0.1:8000
-Swagger API Documentation: http://127.0.0.1:8000/docs
+```
+
+**5. Open the Application**
+* API: http://127.0.0.1:8000
+* Swagger API Documentation: http://127.0.0.1:8000/docs
+
 ---
 
-👨‍💻 Author
-Kalpesh Patil
+## 👨‍💻 Author
+
+**Kalpesh Patil**
 Data Science | Machine Learning | Deep Learning | NLP | AI/ML
+
 ⭐ If you find this project useful, consider giving it a star.
